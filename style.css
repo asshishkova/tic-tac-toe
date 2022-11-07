@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --very-dark: #220e24;
+  --dark-blue: #342056;
+  --light-blue: #639cd9;
+}
+
+html {
+  font-family: 'Indie Flower', cursive;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(var(--light-blue), var(--dark-blue));
+  padding: 50px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.app-window {
+  color: var(--very-dark);
+  width: 400px;
+  margin: auto;
+  background-color: antiquewhite;
+  border-radius: 4px;
+}
+
+.app-title {
+  text-align: center;
+  margin: 0px;
+  padding-top: 20px;
+}
+
+#field {
+  background-color: var(--very-dark);
+  width: 300px;
+  border-radius: 4px;
+  margin: auto;
+}
+
+.cell {
+  min-width: 100px;
+  height: 100px;
+  background-color: whitesmoke;
+  justify-content: center;
+  font-size: 70px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.x-move, .o-move {
+  height: 100px;
+  display: none;
+  text-align: center;
+  color: var(--light-blue);
+  cursor: pointer;
+}
+
+.x-move.selected, .o-move.selected {
+  color: var(--very-dark);
+  display: block;
+  cursor: default;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 4px;
+  border: 0px;
+  color: whitesmoke;
+  font-size: 24px;
+}
+
+#play-again {
+  background-color: var(--dark-blue);
+  width: 138px;
+  font-family: 'Indie Flower', cursive;
+}
